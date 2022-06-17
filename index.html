@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Veronika Smiayun</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anek+Malayalam:wght@300;500&family=Tai+Heritage+Pro&display=swap"
+      rel="stylesheet">
+    <link href="./assets/prism/prism.css" rel="stylesheet">
+  </head>
+  <body class="page">
+    <div class="container">
+      <div class="left-side">
+        <div class="section__left-side">
+          <div class="photo-wrapper">
+            <img src="./assets/img/foto.svg" alt="Veranika Smiayun">
+          </div>
+          <hr class="line">
+          <section class="contact">
+            <h2 class="title">Contacts</h2>
+            <ul class="contact__list">
+              <li class="contact__item">
+                <a class="contact__link"
+                  href="https://www.google.com/maps/place/%D0%9C%D0%B8%D0%BD%D1%81%D0%BA/@53.8847608,27.4532851,11z/data=!3m1!4b1!4m5!3m4!1s0x46dbcfd35b1e6ad3:0xb61b853ddb570d9!8m2!3d53.9006011!4d27.558972!5m1!1e1?hl=ru-RU"
+                  target="_blank">
+                  <img  class="contact__link_icon" src="./assets/svg/Geo_white.svg" alt="Geo location">
+                  <span class="contact__link_caption">Minsk, Belarus</span>
+                </a>
+              </li>
+              <li class="contact__item">
+                <a class="contact__link" href="tel:+375256968403">
+                  <img class="contact__link_icon" src="./assets/svg/Phone_white.svg" alt="Phone">
+                  <span class="contact__link_caption">Phone: +375 25 696 84 03</span>
+                </a>
+              </li>
+              <li class="contact__item">
+                <a class="contact__link" href="mailto:smeyun@list.ru">
+                  <img class="contact__link_icon" src="./assets/svg/Mail_ru_white.svg" alt="Mail.ru">
+                  <span class="contact__link_caption">E-mail: smeyun@list.ru</span>
+                </a>
+              </li>
+              <li class="contact__item">
+                <a class="contact__link" href="https://github.com/Veronika2811">
+                  <img class="contact__link_icon" src="./assets/svg/Github_white.svg" alt="Github">
+                  <span class="contact__link_caption">GitHub: Veronika2811</span>
+                </a>
+              </li>
+              <li class="contact__item">
+                <a class="contact__link" href="https://discordapp.com/users/752400848411164712/">
+                  <img class="contact__link_icon" src="./assets/svg/Discord_white.svg" alt="Discord">
+                  <span class="contact__link_caption">Discord: Veronika2811#1463</span>
+                </a>
+              </li>
+            </ul>
+          </section>
+          <section class="skills">
+            <h2 class="title">Skills</h2>
+            <ul class="skills__list">
+              <li>Web-development: HTML5, CSS3, JavaScript</li>
+              <li>Preprocessor: Sass</li>
+              <li>Version control: GIT, Github</li>
+            </ul>
+          </section>
+          <section class="education">
+            <h2 class="title">Education</h2>
+            <ul class="education__list">
+              <li class="education__item">
+                <h5 class="education__item_year">2022-present</h5>
+                <p class="education__item_speciality">JS / FRONT-END - Stage 1</p>
+                <p class="education__item_institution">The Rolling Scopes School</p>
+              </li>
+              <li class="education__item">
+                <h5 class="education__item_year">2021-2022</h5>
+                <p class="education__item_speciality">JS / FRONT-END - Stage 0</p>
+                <p class="education__item_institution">The Rolling Scopes School</p>
+              </li>
+            </ul>
+          </section>
+          <section class="languages">
+            <h2 class="title">Languages</h2>
+            <div class="languages__item">
+              <p class>English</p>
+              <div class="controls">
+                <span class="control">A1</span>
+                <span class="control">A2</span>
+                <span class="control">B1</span>
+                <span class="control">B2</span>
+                <span class="control">C1</span>
+                <span class="control">C2</span>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+      <main class="right-side">
+        <div class="right-side__content">
+          <header class="about-me">
+            <h1 class="name">Veranika Smiayun</h1>
+            <p class="speciality">Frontend Developer</p>
+          </header>
+          <hr class="line right-line">
+          <section class="summary">
+            <h2 class="title">Summary</h2>
+            <p>
+              The frontend attracted me because you can immediately see the
+              result of your work. For me it means a way to develop my skills
+              and learn new things. I learn HTML, CSS, SASS, JS, Typescript,
+              WebPack, some NodeJS. And I practice the acquired knowledge on the
+              school's educational projects (algorithmic problems, landing
+              pages), and solve problems on codewars. I study English with a
+              tutor.<br />I would like to work under the guidance of an
+              experienced developer to gain practical experience. I think, that
+              my hard work and diligence, the ability to quickly grasp
+              information will help me on this difficult path.<br />My goal is
+              to become an experienced and skilled Frontend Developer.
+            </p>
+            <div>
+              <a class="button" href="https://www.youtube.com/watch?v=LmWupsVHhSU">My self-introduction</a>
+            </div>
+          </section>
+          <section class="skills">
+            <h2 class="title">Code</h2>
+            <pre><code class="language-js"> 
+      const stringParser = (url) => {
+      return url
+        .slice (url.indexOf('?') + 1)
+        .split('&')
+        .reduce((obj, current) => {
+          const [key, value] = current.split("=");
+          obj[key] = value
+          return obj;
+        }, {});
+      };
+            </code></pre>
+          </section>
+          <div class="experience">
+            <a class="button" href="./project.html">View projects</a>
+          </div>
+        </div>
+      </main>
+    </div>
+    <script src="./assets/prism/prism.js"></script>
+  </body>
+</html>

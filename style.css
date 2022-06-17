@@ -1,0 +1,221 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+  padding-left: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: #4d4e4e;
+}
+
+.page {
+  background-image: url("./assets/background/marble.jpg");
+  background-size: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Anek Malayalam", sans-serif;
+  font-weight: 300;
+  color: #4d4e4e;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 20px;
+  display: grid;
+  grid-template-columns: 0.5fr 3fr;
+  box-shadow: 0 35px 55px rgb(0 0 0);
+}
+
+.left-side {
+  background-color: #4d4e4e;
+  padding: 50px 0;
+}
+
+.section__left-side {
+  background-color: #fff3ee;
+  position: relative;
+  right: -50px;
+  padding: 20px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 150%;
+}
+
+.photo-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.line {
+  width: 100%;
+  background-color: #4d4e4e;
+  height: 2px;
+  border: none;
+}
+
+.title {
+  font-family: "Tai Heritage Pro", serif;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  font-size: 24px;
+  padding-bottom: 20px;
+}
+
+.title:after {
+  content: "";
+  display: block;
+  width: 32px;
+  margin-top: -10px;
+  border-bottom: 3px solid #ffbda2;
+}
+
+.skills__list,
+.fuctional {
+  list-style: inside;
+}
+
+.contact__list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact__link {
+  text-decoration: none;
+  color: #4d4e4e;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.contact__link:hover {
+  font-weight: 700;
+}
+
+.contact__link_icon {
+  width: 35px;
+  height: 35px;
+  filter: invert(59%) sepia(5%) saturate(83%) hue-rotate(131deg) brightness(92%)
+    contrast(84%);
+}
+
+.education__list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.education__item_institution {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.languages__item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.controls {
+  display: flex;
+}
+
+.control {
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  display: inline-block;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #4d4e4e;
+}
+
+.control:first-child {
+  background-color: #4d4e4e;
+  color: #ffbda2;
+}
+
+.right-side {
+  background: #ffffff;
+}
+
+.right-side__content {
+  position: relative;
+  right: -25%;
+  width: 72%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.name {
+  font-family: "Tai Heritage Pro", serif;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  font-size: 42px;
+}
+
+.speciality {
+  font-size: 30px;
+}
+
+.about-me {
+  height: 185px;
+  margin-top: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.button {
+  margin-top: 10px;
+  background-color: #fff3ee;
+  padding: 15px 25px;
+  border-radius: 100px;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.button:hover {
+  background-color: #fceae4;
+  font-weight: 700;
+}
+
+/* Two page */
+.project-container {
+  background-color: #ffffff;
+  max-width: 1000px;
+  min-height: 1000px;
+  padding: 20px;
+  margin: 20px;
+  box-shadow: 0 35px 55px rgb(0 0 0);
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.project {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.project__image {
+  width: 45%;
+  height: 100%;
+}
+
+.position-btn {
+  margin: 0 auto;
+}
