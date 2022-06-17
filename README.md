@@ -18,4 +18,7 @@
 <img align="left" alt="TypeScript" width="26px" src="./icon/typescript.png">
 <img align="left" alt="WebPack" width="26px" src="./icon/webpack.png"> 
 
+<br>
+<br>
+
 [CV Veronika Smiayun](https://veronika2811.github.io/Veronika2811/)
