@@ -1,0 +1,269 @@
+:root {
+  --main-color: #daeeec;
+  --light-color: #ffffff;
+  --link-hover-color: #000000;
+  --main-text-color: #4d4e4e;
+  --section-title-color: #1bb7ac;
+  --btn-hover-color: #c6e8e5;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: "Anek Malayalam", sans-serif;
+  font-weight: 300;
+  color: var(--main-text-color);
+}
+
+.page__container {
+  margin: 50px;
+  padding: 30px;
+  max-width: 1200px;
+  background-image: linear-gradient(
+    to right,
+    var(--main-color) 35%,
+    var(--light-color) 50%
+  );
+  box-shadow: 0 35px 55px var(--main-text-color);
+}
+
+@media (max-width: 600px) {
+  .page__container {
+    margin: 0px;
+  }
+}
+
+.header {
+  display: flex;
+  justify-content: end;
+  padding-bottom: 20px;
+}
+
+.lang {
+  text-transform: uppercase;
+}
+
+.lang__item {
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.lang__item:hover:not("lang_active") {
+  color: var(--link-hover-color);
+}
+
+.lang_active {
+  font-weight: 600;
+  color: var(--section-title-color);
+}
+
+.page__main {
+  display: grid;
+  grid-template-areas:
+    "photo user"
+    "photo summary"
+    "skills summary"
+    "education summary";
+  grid-column-gap: 50px;
+}
+
+@media (max-width: 1090px) {
+  .page__main {
+    grid-template-areas:
+      "photo"
+      "user"
+      "summary"
+      "skills"
+      "education";
+  }
+}
+
+.main-photo {
+  grid-area: photo;
+  max-width: 100%;
+}
+
+@media (max-width: 1090px) {
+  .main-photo {
+    margin: 0 auto;
+  }
+}
+
+.main-photo__image {
+  border-radius: 15px;
+}
+
+.title {
+  padding: 20px 0px;
+  font-family: "Tai Heritage Pro", serif;
+  font-size: 1.5em;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.title:after {
+  content: "";
+  display: block;
+  border-bottom: 3px solid var(--section-title-color);
+}
+
+.skills {
+  grid-area: skills;
+}
+
+.skills__items,
+.education__items,
+.contacts__items {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-left: 15px;
+  list-style: none;
+}
+
+.skills__items,
+.experience__tasks {
+  list-style: inside;
+}
+
+.education {
+  grid-area: education;
+}
+
+.education__date,
+.education__institution,
+.experience__period,
+.experience__technologies {
+  font-size: 0.94em;
+  font-weight: 600;
+}
+
+.education__certificate-link {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 12px;
+  width: 100%;
+  font-size: 0.94em;
+  font-weight: bold;
+  color: var(--section-title-color);
+  text-align: center;
+  border: 1px solid var(--section-title-color);
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.education__certificate-link:hover {
+  color: var(--light-color);
+  background-color: var(--section-title-color);
+}
+
+.user {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  grid-area: user;
+}
+
+@media (max-width: 1090px) {
+  .user {
+    align-items: center;
+    text-align: center;
+  }
+}
+
+.user__title {
+  font-family: "Tai Heritage Pro", serif;
+  font-size: 2.63em;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.user__subtitle {
+  font-size: 1.88em;
+  font-weight: 300;
+}
+
+.user__contacts {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 10px;
+}
+
+.contacts__items {
+  padding-left: 0;
+}
+
+.contacts__item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.contacts__link,
+.footer__link {
+  display: contents;
+  color: var(--main-text-color);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.contacts__link:hover,
+.footer__link:hover {
+  color: var(--link-hover-color);
+}
+
+.contacts__icon,
+.footer__icon {
+  width: 30px;
+  height: 30px;
+}
+
+.summary {
+  grid-area: summary;
+}
+
+.summary__text,
+.experience__description {
+  text-align: justify;
+  text-indent: 2%;
+}
+
+.experience {
+  grid-area: experience;
+}
+
+.projects {
+  grid-area: projects;
+}
+
+.footer {
+  grid-area: footer;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
+}
+
+.footer__link {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.footer__link:hover .footer__icon {
+  filter: invert(70%) sepia(75%) saturate(3033%) hue-rotate(129deg)
+    brightness(91%) contrast(79%);
+}
