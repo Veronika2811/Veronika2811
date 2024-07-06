@@ -22,6 +22,7 @@ I am a Frontend Developer <img src="https://media.giphy.com/media/WUlplcMpOCEmTG
 
 - :seedling: I like to develop my skills and learn new things.
 - :zap: My goal is to become a Software Engineer.
+- :cherry_blossom: [Curriculum Vitae](https://veronika2811.github.io/Veronika2811/cv/)
 
 ---
 ### :hammer_and_wrench: Tech Stack :
